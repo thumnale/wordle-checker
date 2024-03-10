@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="word">
+            <h1>What is your wordle?</h1>
+            <input id="word" type="text">
+        </div>
+        <div class="wordle">
+            <div id="char1" class="">s</div>
+            <div id="char2" class="">t</div>
+            <div id="char3" class="">a</div>
+            <div id="char4" class="">r</div>
+            <div id="char5" class="">t</div>
+        </div>
+        <div class="input">
+            <input id="guess" type="text" placeholder="Enter your guess" value="start">
+            <button id="submitGuess" onclick="wordle(document.querySelector('#guess').value)">Submit</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
